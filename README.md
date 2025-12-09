@@ -52,9 +52,9 @@ Modify existing SVGs with natural-language instructions:
 
 ---
 
-### ⚙️ Multi-Model AI Support
+## ⚙️ Multi-Model AI Support
 
-#### **Google Gemini**
+### Google Gemini
 - Gemini 3.0 Pro (**recommended**)  
 - Gemini 3.0 Pro Preview  
 - Gemini 2.5 Pro  
@@ -62,7 +62,7 @@ Modify existing SVGs with natural-language instructions:
 - Gemini 2.5 Flash Thinking  
 - Gemini 2.0 Flash Lite  
 
-#### **OpenRouter**
+### OpenRouter
 - Gemini 2.0 Flash (Free)  
 - Gemini 2.0 Pro (Free)  
 - Claude 3.5 Sonnet  
@@ -76,7 +76,27 @@ Modify existing SVGs with natural-language instructions:
 
 ## 🧱 Project Structure
 
-
+```
+SVG-ORA-STUDIO
+│
+├── components/
+│   ├── Header.tsx
+│   ├── HistorySidebar.tsx
+│   ├── InputSection.tsx
+│   ├── SvgPreview.tsx
+│   ├── EditorTools.tsx
+│
+├── services/
+│   ├── geminiService.ts
+│
+├── App.tsx
+├── index.tsx
+├── constants.ts
+├── metadata.json
+├── types.ts
+├── index.html
+└── package.json
+```
 
 ---
 
@@ -86,52 +106,64 @@ Modify existing SVGs with natural-language instructions:
 ```bash
 git clone https://github.com/seeb4coding/SVG-ORA-Studio
 cd SVG-ORA-Studio
-bash```
+```
 
-### Install Dependencies
+### 2️⃣ Install Dependencies
+```bash
 npm install
+```
 
-Add Your API Keys
-Create a .env.local file:
+### 3️⃣ Add Your API Keys
+Create a **.env.local** file:
+
+```
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 OPENROUTER_API_KEY=YOUR_OPENROUTER_API_KEY
+```
 
+> 🔑 **Use Your Own API Key — Google Gemini 3.0 is Recommended**
 
-###🔑 Use Your Own API Key — Google Gemini 3.0 is Recommended
+---
 
-###🧪 Run Locally
+## 🧪 Run Locally
+```bash
 npm run dev
-Visit: http://localhost:5173
+```
+Visit: **http://localhost:5173**
 
-###📦 Build for Production
+---
+
+## 📦 Build for Production
+```bash
 npm run build
 npm run preview
+```
 
 ---
 
-###🛣️ Roadmap
-Drag-and-drop SVG canvas
-Export as PNG / WEBP
-ZIP export
-Shape presets library
-Chrome extension
+## 🛣️ Roadmap
+- Drag-and-drop SVG canvas  
+- Multi-layer vector editing  
+- Export as PNG / WEBP  
+- ZIP export  
+- AI-powered SVG optimizer  
+- Shape presets library  
+- Chrome extension  
 
 ---
 
-###✅ Powered by Google AI Studio
-
-All Gemini API calls run directly client-side inside the browser using Google AI Studio.
+## ✅ Powered by Google AI Studio
+All Gemini API calls run directly **client-side** inside the browser using Google AI Studio.  
 No backend server is required — secure, fast, and lightweight.
 
 ---
 
-###👨‍💻 Author
-
-## seeb4coding.in
-📧 support@seeb4coding.in
+## 👨‍💻 Author
+**seeb4coding.in**  
+📧 support@seeb4coding.in  
 🌐 https://seeb4coding.in/
 
 ---
 
-###⭐ Support
-If you find this project helpful, please star the repo to support future updates!
+## ⭐ Support
+If you find this project helpful, please **star the repo** to support future updates!
